@@ -15,6 +15,7 @@ import java.lang.annotation.Target;
 public @interface Embedded {
 
 String name() default "";
+    String commentary() default "";
 
 
 }

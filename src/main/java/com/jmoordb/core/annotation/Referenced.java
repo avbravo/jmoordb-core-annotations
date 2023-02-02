@@ -11,7 +11,6 @@ import java.lang.annotation.Target;
  *
  * @author
  */
-
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD})
 public @interface Referenced {
@@ -20,6 +19,7 @@ public @interface Referenced {
 
     String localField();
 
-
     TypeReferenced typeReferenced() default TypeReferenced.REFERENCED;
+
+    String commentary() default "";
 }

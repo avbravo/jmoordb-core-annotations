@@ -22,4 +22,5 @@ public @interface ViewReferenced {
 
 
     TypeReferenced typeReferenced() default TypeReferenced.VIEWREFERENCED;
+        String commentary() default "";
 }
