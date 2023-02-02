@@ -9,7 +9,6 @@ import java.lang.annotation.Target;
  *
  * @author
  */
-
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD})
 public @interface Microservices {
@@ -29,5 +28,7 @@ public @interface Microservices {
     String user();
 
     String password();
+
+    String commentary() default "";
 
 }

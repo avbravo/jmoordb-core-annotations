@@ -28,5 +28,6 @@ public @interface RepositoryMongoDB {
      * @return
      */
   JakartaSource jakartaSource() default JakartaSource.JAKARTA;
+      String commentary() default "";
 
 }

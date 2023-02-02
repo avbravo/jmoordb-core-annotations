@@ -15,5 +15,6 @@ import java.lang.annotation.Target;
 @Documented
 @Target(ElementType.TYPE)
 public @interface JsonObject {
-    
+
+    String commentary() default "";
 }
