@@ -21,5 +21,5 @@ public @interface DocumentEmbeddable {
     String collection() default "";
     String database() default "{mongodb,database}";
     JakartaSource jakartaSource() default JakartaSource.JAKARTA;
-
+ String commentary() default "";
 }

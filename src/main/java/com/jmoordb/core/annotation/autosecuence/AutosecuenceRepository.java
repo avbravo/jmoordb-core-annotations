@@ -22,5 +22,6 @@ public @interface AutosecuenceRepository {
      * @return
      */
     String database() default "{mongodb.jmoordb}";
+     String commentary() default "";
 
 }
