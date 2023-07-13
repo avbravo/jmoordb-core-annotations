@@ -5,6 +5,7 @@
 package com.jmoordb.core.annotation.repository;
 
 import com.jmoordb.core.annotation.enumerations.CaseSensitive;
+import com.jmoordb.core.annotation.enumerations.LikeByType;
 import com.jmoordb.core.annotation.enumerations.TypeOrder;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -20,4 +21,5 @@ import java.lang.annotation.Target;
 public @interface CountLikeBy {
     CaseSensitive caseSensitive() default CaseSensitive.NO;
 
+    LikeByType likeByType() default LikeByType.FROMTHESTART;
 }
