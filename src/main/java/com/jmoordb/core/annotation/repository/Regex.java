@@ -5,6 +5,7 @@
 package com.jmoordb.core.annotation.repository;
 
 import com.jmoordb.core.annotation.enumerations.CaseSensitive;
+import com.jmoordb.core.annotation.enumerations.LikeByType;
 import com.jmoordb.core.annotation.enumerations.TypeOrder;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -21,4 +22,5 @@ public @interface Regex {
     String where();
     CaseSensitive caseSensitive() default CaseSensitive.NO;
     TypeOrder typeOrder() default TypeOrder.ASC;
+    LikeByType likeByType() default LikeByType.FROMTHESTART;
 }
