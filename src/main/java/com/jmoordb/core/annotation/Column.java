@@ -14,4 +14,6 @@ public @interface Column {
     String value() default "";
 
     String commentary() default "";
+
+    boolean generateQuery() default false;
 }
