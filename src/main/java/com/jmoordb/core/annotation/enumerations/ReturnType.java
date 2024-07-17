@@ -10,5 +10,5 @@ package com.jmoordb.core.annotation.enumerations;
  * Tipos de valor de retorno de los metodos de la interface @Repository
  */
 public enum ReturnType {
-    OPTIONAL, ENTITY, LIST, INTEGER, SET, BOOLEAN, STREAM ,NONE, STRING, DATE, FLOAT, LONG,DOUBLE, LOCALDATETIME
+    OPTIONAL, ENTITY, LIST, INTEGER, SET, BOOLEAN, STREAM ,NONE, STRING, DATE, FLOAT, LONG,DOUBLE, LOCALDATETIME, OBJECTID
 }
