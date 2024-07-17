@@ -2304,5 +2304,22 @@ public class JmoordbCoreUtil {
         }
         return result;
     }
+    
+    
+    
+      // <editor-fold defaultstate="collapsed" desc="String rename_IdToId(String nameOfField)">
+    public static String rename_IdToId(String nameOfField) {
+        String result = nameOfField;
+        try {
+            if (nameOfField.toLowerCase().trim().equals("_id")) {
+                result = nameOfField.replace("_", "").trim();
+            }
+
+        } catch (Exception e) {
+            MessagesUtil.error(MessagesUtil.nameOfClassAndMethod() + " " + e.getLocalizedMessage());
+        }
+        return result;
+    }
+        // </editor-fold>
 
 }

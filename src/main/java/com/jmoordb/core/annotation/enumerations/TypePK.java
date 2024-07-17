@@ -10,6 +10,6 @@ package com.jmoordb.core.annotation.enumerations;
  */
 public enum TypePK {
  
- STRING, LONG
+ STRING, LONG, OBJECTID
     
 }
