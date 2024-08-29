@@ -1,5 +1,6 @@
 package com.jmoordb.core.annotation;
 
+import com.jmoordb.core.annotation.enumerations.Unique;
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -16,4 +17,6 @@ public @interface Column {
     String commentary() default "";
 
     boolean generateQuery() default false;
+
+    Unique unique() default Unique.NO;
 }
