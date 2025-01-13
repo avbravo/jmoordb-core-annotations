@@ -1,5 +1,6 @@
 package com.jmoordb.core.annotation.autosecuence;
 
+import com.jmoordb.core.annotation.enumerations.ConfigEngine;
 import com.jmoordb.core.annotation.repository.*;
 import com.jmoordb.core.annotation.enumerations.JakartaSource;
 import com.jmoordb.core.annotation.enumerations.TypeReferenced;
@@ -13,6 +14,7 @@ import java.lang.annotation.Target;
 public @interface AutosecuenceRepository {
     Class<?> entity();
     JakartaSource jakartaSource() default JakartaSource.JAKARTA;
+     ConfigEngine configEngine() default ConfigEngine.MICROPROFILE_CONFIG;
     String collection() default "autosecuence";
     /**
      * database_name --> Es un nombre de base de datos que indique el

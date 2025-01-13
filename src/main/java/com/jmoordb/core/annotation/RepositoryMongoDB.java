@@ -1,5 +1,6 @@
 package com.jmoordb.core.annotation;
 
+import com.jmoordb.core.annotation.enumerations.ConfigEngine;
 import com.jmoordb.core.annotation.enumerations.JakartaSource;
 import com.jmoordb.core.annotation.enumerations.TypeReferenced;
 import java.lang.annotation.ElementType;
@@ -18,7 +19,6 @@ public @interface RepositoryMongoDB {
      * @return
      */
 //   String entity();
-
     Class<?> entity();
 
     /**
@@ -27,7 +27,9 @@ public @interface RepositoryMongoDB {
      *
      * @return
      */
-  JakartaSource jakartaSource() default JakartaSource.JAKARTA;
-      String commentary() default "";
+    JakartaSource jakartaSource() default JakartaSource.JAKARTA;
+    ConfigEngine configEngine() default ConfigEngine.MICROPROFILE_CONFIG;
+
+    String commentary() default "";
 
 }
