@@ -1,5 +1,6 @@
 package com.jmoordb.core.annotation.repository;
 
+import com.jmoordb.core.annotation.enumerations.ConfigEngine;
 import com.jmoordb.core.annotation.enumerations.JakartaSource;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -13,6 +14,7 @@ public @interface Repository {
    Class<?> entity();
 
     JakartaSource jakartaSource() default JakartaSource.JAKARTA;
+    ConfigEngine configEngine() default ConfigEngine.MICROPROFILE_CONFIG;
 
     String collection() default "";
 
