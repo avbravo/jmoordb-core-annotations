@@ -10,6 +10,6 @@ package com.jmoordb.core.annotation.enumerations;
  */
 public enum JakartaSource {
  
- JAKARTA, JAVAEE_LEGACY
+ JAKARTA, JAVAEE_LEGACY, JETTRA
     
 }
