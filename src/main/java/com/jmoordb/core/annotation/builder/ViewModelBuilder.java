@@ -15,6 +15,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.SOURCE) // RetentionPolicy.SOURCE is crucial; the annotation is only needed at compile time.
 @Target(ElementType.TYPE)
-public @interface CoreViewModelBuilder {
+public @interface ViewModelBuilder {
     
 }
